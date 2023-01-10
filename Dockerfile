@@ -9,4 +9,4 @@ COPY --chown=serverman artifact/LinuxServer /app
 WORKDIR /app
 USER serverman
 
-ENTRYPOINT [ "sh", "/app/server.sh" ]
+ENTRYPOINT [ "sh", "/app/server.sh", "-log" ]
